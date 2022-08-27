@@ -1,0 +1,36 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.header {
+  margin-top: 25px;
+  height: 70px;
+}
+.header .logo {
+  width: 153px;
+}
+.header a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+}
+.header .nav-block {
+  text-align: center;
+}
+.header .nav-block .nav {
+  display: inline-block;
+  margin-top: 20px;
+}
+.header .nav-block .nav .ml {
+  margin-left: 70px;
+}
+.header .phone {
+  margin-top: 18px;
+  text-align: right;
+}
+.header .phone a {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
