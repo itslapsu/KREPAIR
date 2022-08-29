@@ -12,7 +12,7 @@ body {
   text-decoration: none;
   color: #000;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
 }
 .header .nav-block {
   text-align: center;
@@ -21,16 +21,173 @@ body {
   display: inline-block;
   margin-top: 20px;
 }
+.header .nav-block .nav a {
+  padding: 10px 10px;
+  border-bottom: 1px solid transparent;
+  transition: all .3s;
+}
+.header .nav-block .nav a:hover {
+  border-bottom: 1px solid #000;
+}
 .header .nav-block .nav .ml {
-  margin-left: 70px;
+  margin-left: 10px;
 }
 .header .phone {
   margin-top: 18px;
-  text-align: right;
+  width: 100%;
 }
 .header .phone a {
+  width: 100%;
+  text-align: right;
   display: inline-block;
   font-weight: 700;
   font-size: 20px;
+}
+.redbtn {
+  position: relative;
+  font-size: 18px;
+  background-color: #F03957;
+  padding: 18px 20px;
+  border-radius: 10px;
+  color: #fff;
+  transition: all .3s;
+  border: 2px solid #F03957;
+  z-index: 4;
+}
+.redbtn:hover {
+  background-color: #fff;
+  color: #F03957;
+}
+.whitebtn {
+  position: relative;
+  font-size: 18px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 18px 20px;
+  transition: all .3s;
+  z-index: 4;
+}
+.whitebtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.main {
+  padding-top: 94px;
+}
+.main .title {
+  display: inline-block;
+  margin-top: 91px;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main .subtitle {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #817979;
+}
+.main button {
+  display: inline-block;
+  margin-top: 90px;
+}
+.main .main-image {
+  text-align: right;
+  z-index: 5;
+}
+.main .main-image img {
+  display: inline-block;
+  width: 90%;
+}
+@media (max-width: 1399px) {
+  .main .main-image img {
+    width: 110%;
+    transform: translateX(-10%);
+  }
+}
+@media (max-width: 1199px) {
+  .header .logo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .header .nav-block {
+    text-align: left;
+  }
+  .main {
+    background-image: url("../img/header1.png");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-blend-mode: multiply;
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+  .main .title {
+    margin-top: -80px;
+    color: #fff;
+  }
+  .main .subtitle {
+    color: rgba(255, 255, 255, 0.64);
+  }
+  .main .redbtn:hover {
+    background-color: transparent;
+  }
+  .main .whitebtn {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    transition: all .3s;
+  }
+  .main .whitebtn:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .main .main-image-block {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .header .logo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .header .phone {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .header .phone a {
+    text-align: center;
+  }
+  .header .nav-block {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .header .logo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .header .phone {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .header .phone a {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .header .logo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .header .phone {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
