@@ -95,15 +95,72 @@ body {
 .main .main-image {
   text-align: right;
   z-index: 5;
+  padding-bottom: 160px;
 }
 .main .main-image img {
   display: inline-block;
   width: 90%;
 }
+red {
+  color: #F03957;
+}
+.services {
+  background-color: #525252;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.services-title {
+  padding-bottom: 80px;
+}
+.services-title h1 {
+  color: #F7F5F5;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 45px;
+}
+.services-title .subtitle {
+  color: #F7F5F5;
+  margin-top: 31px;
+}
+.services-block {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.services-block h2 {
+  padding-top: 60px;
+  font-weight: 600;
+  font-size: 30px;
+}
+.services-block p {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.services-block .whitebtn {
+  margin-bottom: 80px;
+}
+.services-block .image-block {
+  text-align: center;
+}
+.services-block .image-block img {
+  margin-top: 62px;
+  display: inline-block;
+}
+.services-block .image-block .phone {
+  margin-top: 79px;
+}
+.services-block .image-block .tv {
+  width: 288px;
+}
 @media (max-width: 1399px) {
   .main .main-image img {
     width: 110%;
     transform: translateX(-10%);
+  }
+  .services .services-block .image-block .phone {
+    margin-top: 79px;
   }
 }
 @media (max-width: 1199px) {
@@ -147,6 +204,10 @@ body {
   .main .main-image-block {
     display: none;
   }
+  .services .services-title h1,
+  .services .services-title .subtitle {
+    text-align: center;
+  }
 }
 @media (max-width: 991px) {
   .header .logo {
@@ -163,6 +224,17 @@ body {
   }
   .header .nav-block {
     text-align: center;
+  }
+  .main button {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .services .services-block .image-block .phone {
+    margin-top: 106px;
+  }
+  .services .services-block .image-block .electro {
+    width: 100%;
+    margin-top: 140px;
   }
 }
 @media (max-width: 767px) {
