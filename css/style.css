@@ -67,6 +67,7 @@ body {
   padding: 18px 20px;
   transition: all .3s;
   z-index: 4;
+  color: #000;
 }
 .whitebtn:hover {
   background-color: #000;
