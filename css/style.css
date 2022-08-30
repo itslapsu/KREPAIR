@@ -252,14 +252,20 @@ red {
   .services .services-block {
     text-align: center;
   }
+  .services .services-block .image-block .audio {
+    margin-top: -60px;
+  }
   .services .services-block .image-block .phone {
     margin-top: -78px;
+  }
+  .services .services-block .image-block .electro {
+    margin-top: -75px;
   }
   .services .services-block .image-block .tv {
     margin-top: -65px;
   }
-  .services .services-block .image-block .audio {
-    margin-top: -60px;
+  .services .services-block .image-block .photo {
+    margin-top: -80px;
   }
   .services .services-block {
     display: flex;
