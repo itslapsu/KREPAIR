@@ -9,27 +9,31 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/burger.js"></script>
 </head>
 <body>
-    <div class="header">
+    <div class="header active">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-12 col-xl-2">
+                <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-2">
                     <div class="logo">
                         <a href="#"><img src="./img/logo.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-8 offset-xl-1 col-xl-6">
-                    <div class="nav-block">
-                        <div class="nav">
-                            <a href="#">Услуги</a>
-                            <a class="ml" href="#">Прайс-лист</a>
-                            <a class="ml" href="#">О компании</a>
-                            <a class="ml" href="#">Контакты</a>
-                        </div>
+                <div class="burger-block col-6 col-sm-6">
+                    <div class="burger">
+                        <span></span>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-4 col-xl-3">
+                <div class="nav-block col-md-12 col-lg-8 offset-xl-1 col-xl-6">
+                    <div class="nav">
+                        <a href="#">Услуги</a>
+                        <a class="ml" href="#">Прайс-лист</a>
+                        <a class="ml" href="#">О компании</a>
+                        <a class="ml" href="#">Контакты</a>
+                    </div>
+                </div>
+                <div class="phone-block col-md-12 col-lg-4 col-xl-3">
                     <div class="phone">
                         <a href="#">+380 12 345 67 89</a>
                     </div>
@@ -148,5 +152,8 @@
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+    <script src="./js/burger.js"></script>
 </body>
 </html>

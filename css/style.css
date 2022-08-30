@@ -8,6 +8,12 @@ body {
 .header .logo {
   width: 153px;
 }
+.header .burger-block {
+  display: none;
+}
+.header .burger {
+  display: none;
+}
 .header a {
   text-decoration: none;
   color: #000;
@@ -238,17 +244,62 @@ red {
   }
 }
 @media (max-width: 767px) {
-  .header .logo {
-    margin-left: 50%;
-    transform: translateX(-50%);
+  .header {
+    height: 0;
+    transition: all .1s ease .0s;
+  }
+  .header .logo a {
+    margin-left: 0%;
+  }
+  .header .burger-block {
+    display: block;
+    text-align: right;
+  }
+  .header .burger {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+  .header .burger:before,
+  .header .burger:after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+  }
+  .header .burger:before {
+    top: 0;
+  }
+  .header .burger:after {
+    bottom: 0;
+  }
+  .header .burger span {
+    position: absolute;
+    background-color: #000000;
+    width: 30px;
+    height: 2px;
+    top: 9px;
+  }
+  .header .nav-block {
+    display: none;
+  }
+  .header .nav-block a {
+    display: block;
   }
   .header .phone {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+    display: none;
   }
-  .header .phone a {
-    text-align: center;
+  .header.active {
+    height: 260px;
+  }
+  .header.active .nav-block {
+    display: inline-block;
+  }
+  .header.active .phone-block .phone {
+    display: block;
   }
   .services .services-block {
     text-align: center;
@@ -283,10 +334,6 @@ red {
   }
 }
 @media (max-width: 575px) {
-  .header .logo {
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
   .header .phone {
     margin-left: 50%;
     transform: translateX(-50%);
