@@ -258,31 +258,21 @@ red {
   .services .services-block .image-block .tv {
     margin-top: -65px;
   }
-  .services .services-block .image-block .electro {
-    width: 400px;
-  }
   .services .services-block .image-block .audio {
     margin-top: -60px;
   }
-  .services .services-block.block-image-left {
-    position: relative;
+  .services .services-block {
+    display: flex;
+    flex-flow: wrap;
   }
-  .services .services-block.block-image-left .image-block.photo {
-    position: relative;
-    transform: translateY(90%);
+  .services .services-block .text-block {
+    order: 1;
   }
-  .services .services-block.block-image-left .text-block.photo {
-    position: relative;
-    transform: translateY(-90%);
+  .services .services-block .image-block {
+    order: 2;
   }
-  .services .services-block.block-image-left .image-block.electro {
-    position: relative;
-    transform: translateY(80%);
-    width: 700px;
-  }
-  .services .services-block.block-image-left .text-block.electro {
-    position: relative;
-    transform: translateY(-93%);
+  .services .services-block .image-block img {
+    width: 100%;
   }
 }
 @media (max-width: 575px) {
