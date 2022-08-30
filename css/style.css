@@ -259,10 +259,13 @@ red {
     margin-top: -65px;
   }
   .services .services-block .image-block .electro {
-    width: 65%;
+    width: 400px;
   }
   .services .services-block .image-block .audio {
     margin-top: -60px;
+  }
+  .services .services-block.block-image-left {
+    position: relative;
   }
   .services .services-block.block-image-left .image-block.photo {
     position: relative;
@@ -275,7 +278,7 @@ red {
   .services .services-block.block-image-left .image-block.electro {
     position: relative;
     transform: translateY(80%);
-    width: 100%;
+    width: 700px;
   }
   .services .services-block.block-image-left .text-block.electro {
     position: relative;
